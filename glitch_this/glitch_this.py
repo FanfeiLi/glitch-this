@@ -28,7 +28,7 @@ class ImageGlitcher:
         self.gif_dirpath = os.path.join(self.lib_path, 'Glitched GIF')
 
         # Setting glitch_amount max and min
-        self.glitch_max = 10.0
+        self.glitch_max = 20.0
         self.glitch_min = 0.1
 
     def __isgif(self, img: Union[str, Image.Image]) -> bool:
