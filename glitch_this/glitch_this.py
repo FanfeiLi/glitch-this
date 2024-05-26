@@ -471,6 +471,7 @@ class ImageGlitcher:
         chunk_height = random.randint(1, int(self.img_height / 4))
         chunk_height = min(chunk_height, self.img_height - start_y)
         stop_y = start_y + chunk_height
+        offset = min(offset, self.img_width - 1)
 
         # For copy
         start_x = offset
@@ -507,6 +508,7 @@ class ImageGlitcher:
         chunk_height = random.randint(1, int(self.img_height / 4))
         chunk_height = min(chunk_height, self.img_height - start_y)
         stop_y = start_y + chunk_height
+        offset = min(offset, self.img_width - 1)
 
         # For copy
         stop_x = self.img_width - offset
